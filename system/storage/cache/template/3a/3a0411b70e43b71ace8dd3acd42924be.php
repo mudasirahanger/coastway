@@ -87,65 +87,67 @@ class __TwigTemplate_d178ea71c9360d135dc5a15dd0550af9 extends Template
         // line 18
         echo ($context["stylesheet"] ?? null);
         echo "\" type=\"text/css\" rel=\"stylesheet\"/>
+  <!-- custom -->
+  <link href=\"catalog/view/stylesheet/custom.css\" rel=\"stylesheet\" type=\"text/css\"/>
   <script type=\"text/javascript\" src=\"catalog/view/javascript/jquery/datetimepicker/moment.min.js\"></script>
   <script type=\"text/javascript\" src=\"catalog/view/javascript/jquery/datetimepicker/moment-with-locales.min.js\"></script>
   <script type=\"text/javascript\" src=\"catalog/view/javascript/jquery/datetimepicker/daterangepicker.js\"></script>
   <link href=\"catalog/view/javascript/jquery/datetimepicker/daterangepicker.css\" rel=\"stylesheet\" type=\"text/css\"/>
   <script src=\"catalog/view/javascript/common.js\" type=\"text/javascript\"></script>
   ";
-        // line 24
+        // line 26
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["styles"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["style"]) {
-            // line 25
+            // line 27
             echo "    <link href=\"";
-            echo twig_get_attribute($this->env, $this->source, $context["style"], "href", [], "any", false, false, false, 25);
+            echo twig_get_attribute($this->env, $this->source, $context["style"], "href", [], "any", false, false, false, 27);
             echo "\" type=\"text/css\" rel=\"";
-            echo twig_get_attribute($this->env, $this->source, $context["style"], "rel", [], "any", false, false, false, 25);
+            echo twig_get_attribute($this->env, $this->source, $context["style"], "rel", [], "any", false, false, false, 27);
             echo "\" media=\"";
-            echo twig_get_attribute($this->env, $this->source, $context["style"], "media", [], "any", false, false, false, 25);
+            echo twig_get_attribute($this->env, $this->source, $context["style"], "media", [], "any", false, false, false, 27);
             echo "\"/>
   ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['style'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 27
+        // line 29
         echo "  ";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["scripts"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["script"]) {
-            // line 28
+            // line 30
             echo "    <script src=\"";
-            echo twig_get_attribute($this->env, $this->source, $context["script"], "href", [], "any", false, false, false, 28);
+            echo twig_get_attribute($this->env, $this->source, $context["script"], "href", [], "any", false, false, false, 30);
             echo "\" type=\"text/javascript\"></script>
   ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['script'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 30
+        // line 32
         echo "  ";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["links"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["link"]) {
-            // line 31
+            // line 33
             echo "    <link href=\"";
-            echo twig_get_attribute($this->env, $this->source, $context["link"], "href", [], "any", false, false, false, 31);
+            echo twig_get_attribute($this->env, $this->source, $context["link"], "href", [], "any", false, false, false, 33);
             echo "\" rel=\"";
-            echo twig_get_attribute($this->env, $this->source, $context["link"], "rel", [], "any", false, false, false, 31);
+            echo twig_get_attribute($this->env, $this->source, $context["link"], "rel", [], "any", false, false, false, 33);
             echo "\"/>
   ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['link'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 33
+        // line 35
         echo "  ";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["analytics"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["analytic"]) {
-            // line 34
+            // line 36
             echo "    ";
             echo $context["analytic"];
             echo "
@@ -154,28 +156,30 @@ class __TwigTemplate_d178ea71c9360d135dc5a15dd0550af9 extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['analytic'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 36
+        // line 38
         echo "</head>
 <body>
 <div id=\"alert\" class=\"toast-container position-fixed top-0 end-0 p-3\"></div>
-<nav id=\"top\">
+<nav id=\"top\" class=\"border-top-rmv\">
   <div class=\"container\">
     <div class=\"nav float-start\">
       <ul class=\"list-inline\">
-        <li class=\"list-inline-item\">";
-        // line 43
+        <!-- <li class=\"list-inline-item\">";
+        // line 45
         echo ($context["currency"] ?? null);
         echo "</li>
         <li class=\"list-inline-item\">";
-        // line 44
+        // line 46
         echo ($context["language"] ?? null);
-        echo "</li>
+        echo "</li> -->
+        <li class=\"list-inline-item\">30-day free returns</li>
+        <li class=\"list-inline-item\">Fast and free delivery over \$100*</li>
       </ul>
     </div>
     <div class=\"nav float-end\">
       <ul class=\"list-inline\">
-        <li class=\"list-inline-item\"><a href=\"";
-        // line 49
+        <!-- <li class=\"list-inline-item\"><a href=\"";
+        // line 53
         echo ($context["contact"] ?? null);
         echo "\"><i class=\"fa-solid fa-phone\"></i></a> <span class=\"d-none d-md-inline\">";
         echo ($context["telephone"] ?? null);
@@ -183,67 +187,67 @@ class __TwigTemplate_d178ea71c9360d135dc5a15dd0550af9 extends Template
         <li class=\"list-inline-item\">
           <div class=\"dropdown\">
             <a href=\"";
-        // line 52
+        // line 56
         echo ($context["account"] ?? null);
         echo "\" class=\"dropdown-toggle\" data-bs-toggle=\"dropdown\"><i class=\"fa-solid fa-user\"></i> <span class=\"d-none d-md-inline\">";
         echo ($context["text_account"] ?? null);
         echo "</span> <i class=\"fa-solid fa-caret-down\"></i></a>
             <ul class=\"dropdown-menu dropdown-menu-right\">
               ";
-        // line 54
+        // line 58
         if ( !($context["logged"] ?? null)) {
-            // line 55
+            // line 59
             echo "                <li><a href=\"";
             echo ($context["register"] ?? null);
             echo "\" class=\"dropdown-item\">";
             echo ($context["text_register"] ?? null);
             echo "</a></li>
                 <li><a href=\"";
-            // line 56
+            // line 60
             echo ($context["login"] ?? null);
             echo "\" class=\"dropdown-item\">";
             echo ($context["text_login"] ?? null);
             echo "</a></li>
               ";
         } else {
-            // line 58
+            // line 62
             echo "                <li><a href=\"";
             echo ($context["account"] ?? null);
             echo "\" class=\"dropdown-item\">";
             echo ($context["text_account"] ?? null);
             echo "</a></li>
                 <li><a href=\"";
-            // line 59
+            // line 63
             echo ($context["order"] ?? null);
             echo "\" class=\"dropdown-item\">";
             echo ($context["text_order"] ?? null);
             echo "</a></li>
                 <li><a href=\"";
-            // line 60
+            // line 64
             echo ($context["transaction"] ?? null);
             echo "\" class=\"dropdown-item\">";
             echo ($context["text_transaction"] ?? null);
             echo "</a></li>
                 <li><a href=\"";
-            // line 61
+            // line 65
             echo ($context["download"] ?? null);
             echo "\" class=\"dropdown-item\">";
             echo ($context["text_download"] ?? null);
             echo "</a></li>
                 <li><a href=\"";
-            // line 62
+            // line 66
             echo ($context["logout"] ?? null);
             echo "\" class=\"dropdown-item\">";
             echo ($context["text_logout"] ?? null);
             echo "</a></li>
               ";
         }
-        // line 64
+        // line 68
         echo "            </ul>
           </div>
         </li>
         <li class=\"list-inline-item\"><a href=\"";
-        // line 67
+        // line 71
         echo ($context["wishlist"] ?? null);
         echo "\" id=\"wishlist-total\" title=\"";
         echo ($context["text_wishlist"] ?? null);
@@ -251,7 +255,7 @@ class __TwigTemplate_d178ea71c9360d135dc5a15dd0550af9 extends Template
         echo ($context["text_wishlist"] ?? null);
         echo "</span></a></li>
         <li class=\"list-inline-item\"><a href=\"";
-        // line 68
+        // line 72
         echo ($context["shopping_cart"] ?? null);
         echo "\" title=\"";
         echo ($context["text_shopping_cart"] ?? null);
@@ -259,64 +263,64 @@ class __TwigTemplate_d178ea71c9360d135dc5a15dd0550af9 extends Template
         echo ($context["text_shopping_cart"] ?? null);
         echo "</span></a></li>
         <li class=\"list-inline-item\"><a href=\"";
-        // line 69
+        // line 73
         echo ($context["checkout"] ?? null);
         echo "\" title=\"";
         echo ($context["text_checkout"] ?? null);
         echo "\"><i class=\"fa-solid fa-share\"></i> <span class=\"d-none d-md-inline\">";
         echo ($context["text_checkout"] ?? null);
         echo "</span></a></li>
+        -->
+        <li class=\"list-inline-item\">Find a store</li>
+        <li class=\"list-inline-item\">Customer Service</li>
       </ul>
     </div>
   </div>
 </nav>
-<header>
+<header class=\"border-header\">
   <div class=\"container\">
     <div class=\"row\">
-      <div class=\"col-md-3 col-lg-4\">
+      <div class=\"col-md-3 col-lg-3\">
         <div id=\"logo\">
-          ";
-        // line 79
-        if (($context["logo"] ?? null)) {
-            // line 80
-            echo "            <a href=\"";
-            echo ($context["home"] ?? null);
-            echo "\"><img src=\"";
-            echo ($context["logo"] ?? null);
-            echo "\" title=\"";
-            echo ($context["name"] ?? null);
-            echo "\" alt=\"";
-            echo ($context["name"] ?? null);
-            echo "\" class=\"img-fluid\"/></a>
-          ";
-        } else {
-            // line 82
-            echo "            <h1><a href=\"";
-            echo ($context["home"] ?? null);
-            echo "\">";
-            echo ($context["name"] ?? null);
-            echo "</a></h1>
-          ";
-        }
-        // line 84
-        echo "        </div>
-      </div>
-      <div class=\"col-md-5\">";
+            <h1><a href=\"";
         // line 86
+        echo ($context["home"] ?? null);
+        echo "\" style=\"color:#795C34;font-weight:900\">COASTWAY</a></h1>
+        </div>
+      </div>
+      <div class=\"col-md-6\">
+      <ul class=\"list-inline menu-top\">
+          <li class=\"list-inline-item\"><a href=\"\">Home</a></li>
+          <li class=\"list-inline-item\"><a href=\"\">Men</a></li>
+          <li class=\"list-inline-item\"><a href=\"\">Women</a></li>
+          <li class=\"list-inline-item\"><a href=\"\">Accessories</a></li>
+          <li class=\"list-inline-item\"><a href=\"\" class=\"sale-color\">Sale</a></li>
+        </ul>
+      </div>
+      <div class=\"col-md-3 col-lg-3\">
+        <ul class=\"list-inline menu-top-right\">
+          <li class=\"list-inline-item\"><i class=\"fa-solid fa-search\"></i></li>
+          <li class=\"list-inline-item\"><i class=\"fa-solid fa-heart\"></i></li>
+          <li class=\"list-inline-item\"><i class=\"fa-solid fa-shopping-bag\"></i></li>
+          <li class=\"list-inline-item\"><i class=\"fa-solid fa-user\"></i></li>
+        </ul>
+      </div>
+      <!-- <div class=\"col-md-5\">";
+        // line 106
         echo ($context["search"] ?? null);
-        echo "</div>
-      <div id=\"header-cart\" class=\"col-md-4 col-lg-3\">";
-        // line 87
+        echo "</div> -->
+      <!-- <div id=\"header-cart\" class=\"col-md-4 col-lg-3\">";
+        // line 107
         echo ($context["cart"] ?? null);
-        echo "</div>
+        echo "</div> -->
     </div>
   </div>
 </header>
 <main>
-  ";
-        // line 92
+  <!-- ";
+        // line 112
         echo ($context["menu"] ?? null);
-        echo "
+        echo " -->
 ";
     }
 
@@ -332,7 +336,7 @@ class __TwigTemplate_d178ea71c9360d135dc5a15dd0550af9 extends Template
 
     public function getDebugInfo()
     {
-        return array (  318 => 92,  310 => 87,  306 => 86,  302 => 84,  294 => 82,  282 => 80,  280 => 79,  263 => 69,  255 => 68,  247 => 67,  242 => 64,  235 => 62,  229 => 61,  223 => 60,  217 => 59,  210 => 58,  203 => 56,  196 => 55,  194 => 54,  187 => 52,  179 => 49,  171 => 44,  167 => 43,  158 => 36,  149 => 34,  144 => 33,  133 => 31,  128 => 30,  119 => 28,  114 => 27,  101 => 25,  97 => 24,  88 => 18,  84 => 17,  80 => 16,  75 => 15,  69 => 13,  66 => 12,  60 => 10,  58 => 9,  54 => 8,  50 => 7,  40 => 2,  37 => 1,);
+        return array (  322 => 112,  314 => 107,  310 => 106,  287 => 86,  267 => 73,  259 => 72,  251 => 71,  246 => 68,  239 => 66,  233 => 65,  227 => 64,  221 => 63,  214 => 62,  207 => 60,  200 => 59,  198 => 58,  191 => 56,  183 => 53,  173 => 46,  169 => 45,  160 => 38,  151 => 36,  146 => 35,  135 => 33,  130 => 32,  121 => 30,  116 => 29,  103 => 27,  99 => 26,  88 => 18,  84 => 17,  80 => 16,  75 => 15,  69 => 13,  66 => 12,  60 => 10,  58 => 9,  54 => 8,  50 => 7,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

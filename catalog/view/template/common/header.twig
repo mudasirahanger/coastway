@@ -16,6 +16,8 @@
   <link href="{{ bootstrap }}" type="text/css" rel="stylesheet" media="screen"/>
   <link href="{{ icons }}" type="text/css" rel="stylesheet"/>
   <link href="{{ stylesheet }}" type="text/css" rel="stylesheet"/>
+  <!-- custom -->
+  <link href="catalog/view/stylesheet/custom.css" rel="stylesheet" type="text/css"/>
   <script type="text/javascript" src="catalog/view/javascript/jquery/datetimepicker/moment.min.js"></script>
   <script type="text/javascript" src="catalog/view/javascript/jquery/datetimepicker/moment-with-locales.min.js"></script>
   <script type="text/javascript" src="catalog/view/javascript/jquery/datetimepicker/daterangepicker.js"></script>
@@ -36,17 +38,19 @@
 </head>
 <body>
 <div id="alert" class="toast-container position-fixed top-0 end-0 p-3"></div>
-<nav id="top">
+<nav id="top" class="border-top-rmv">
   <div class="container">
     <div class="nav float-start">
       <ul class="list-inline">
-        <li class="list-inline-item">{{ currency }}</li>
-        <li class="list-inline-item">{{ language }}</li>
+        <!-- <li class="list-inline-item">{{ currency }}</li>
+        <li class="list-inline-item">{{ language }}</li> -->
+        <li class="list-inline-item">30-day free returns</li>
+        <li class="list-inline-item">Fast and free delivery over $100*</li>
       </ul>
     </div>
     <div class="nav float-end">
       <ul class="list-inline">
-        <li class="list-inline-item"><a href="{{ contact }}"><i class="fa-solid fa-phone"></i></a> <span class="d-none d-md-inline">{{ telephone }}</span></li>
+        <!-- <li class="list-inline-item"><a href="{{ contact }}"><i class="fa-solid fa-phone"></i></a> <span class="d-none d-md-inline">{{ telephone }}</span></li>
         <li class="list-inline-item">
           <div class="dropdown">
             <a href="{{ account }}" class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-user"></i> <span class="d-none d-md-inline">{{ text_account }}</span> <i class="fa-solid fa-caret-down"></i></a>
@@ -67,26 +71,42 @@
         <li class="list-inline-item"><a href="{{ wishlist }}" id="wishlist-total" title="{{ text_wishlist }}"><i class="fa-solid fa-heart"></i> <span class="d-none d-md-inline">{{ text_wishlist }}</span></a></li>
         <li class="list-inline-item"><a href="{{ shopping_cart }}" title="{{ text_shopping_cart }}"><i class="fa-solid fa-cart-shopping"></i> <span class="d-none d-md-inline">{{ text_shopping_cart }}</span></a></li>
         <li class="list-inline-item"><a href="{{ checkout }}" title="{{ text_checkout }}"><i class="fa-solid fa-share"></i> <span class="d-none d-md-inline">{{ text_checkout }}</span></a></li>
+        -->
+        <li class="list-inline-item">Find a store</li>
+        <li class="list-inline-item">Customer Service</li>
       </ul>
     </div>
   </div>
 </nav>
-<header>
+<header class="border-header">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-lg-4">
+      <div class="col-md-3 col-lg-3">
         <div id="logo">
-          {% if logo %}
-            <a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-fluid"/></a>
-          {% else %}
-            <h1><a href="{{ home }}">{{ name }}</a></h1>
-          {% endif %}
+            <h1><a href="{{ home }}" style="color:#795C34;font-weight:900">COASTWAY</a></h1>
         </div>
       </div>
-      <div class="col-md-5">{{ search }}</div>
-      <div id="header-cart" class="col-md-4 col-lg-3">{{ cart }}</div>
+      <div class="col-md-6">
+      <ul class="list-inline menu-top">
+          <li class="list-inline-item"><a href="">Home</a></li>
+          <li class="list-inline-item"><a href="">Men</a></li>
+          <li class="list-inline-item"><a href="">Women</a></li>
+          <li class="list-inline-item"><a href="">Accessories</a></li>
+          <li class="list-inline-item"><a href="" class="sale-color">Sale</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-lg-3">
+        <ul class="list-inline menu-top-right">
+          <li class="list-inline-item"><i class="fa-solid fa-search"></i></li>
+          <li class="list-inline-item"><i class="fa-solid fa-heart"></i></li>
+          <li class="list-inline-item"><i class="fa-solid fa-shopping-bag"></i></li>
+          <li class="list-inline-item"><i class="fa-solid fa-user"></i></li>
+        </ul>
+      </div>
+      <!-- <div class="col-md-5">{{ search }}</div> -->
+      <!-- <div id="header-cart" class="col-md-4 col-lg-3">{{ cart }}</div> -->
     </div>
   </div>
 </header>
 <main>
-  {{ menu }}
+  <!-- {{ menu }} -->

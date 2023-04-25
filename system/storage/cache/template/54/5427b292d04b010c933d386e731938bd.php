@@ -38,39 +38,20 @@ class __TwigTemplate_f2049f3122b1f49d7a6a140460b3e106 extends Template
 <footer>
   <div class=\"container\">
     <div class=\"row\">
-      ";
-        // line 5
-        if (($context["informations"] ?? null)) {
-            // line 6
-            echo "        <div class=\"col-sm-3\">
-          <h5>";
-            // line 7
-            echo ($context["text_information"] ?? null);
-            echo "</h5>
-          <ul class=\"list-unstyled\">
-            ";
-            // line 9
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(($context["informations"] ?? null));
-            foreach ($context['_seq'] as $context["_key"] => $context["information"]) {
-                // line 10
-                echo "              <li><a href=\"";
-                echo twig_get_attribute($this->env, $this->source, $context["information"], "href", [], "any", false, false, false, 10);
-                echo "\">";
-                echo twig_get_attribute($this->env, $this->source, $context["information"], "title", [], "any", false, false, false, 10);
-                echo "</a></li>
-            ";
-            }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['information'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 12
-            echo "          </ul>
+      
+        <div class=\"col-sm-3\">
+        <h5><a href=\"";
+        // line 7
+        echo ($context["home"] ?? null);
+        echo "\" style=\"color:#fff;font-weight:900\">COASTWAY</a></h5>
+        <p class=\"text-left\">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley
+        </p>
         </div>
-      ";
-        }
-        // line 15
-        echo "      <div class=\"col-sm-3\">
+    
+      <div class=\"col-sm-3\">
         <h5>";
         // line 16
         echo ($context["text_service"] ?? null);
@@ -107,85 +88,58 @@ class __TwigTemplate_f2049f3122b1f49d7a6a140460b3e106 extends Template
         echo "</a></li>
         </ul>
       </div>
-      <div class=\"col-sm-3\">
-        <h5>";
-        // line 27
-        echo ($context["text_extra"] ?? null);
-        echo "</h5>
-        <ul class=\"list-unstyled\">
-          <li><a href=\"";
-        // line 29
-        echo ($context["manufacturer"] ?? null);
-        echo "\">";
-        echo ($context["text_manufacturer"] ?? null);
-        echo "</a></li>
-          <li><a href=\"";
-        // line 30
-        echo ($context["voucher"] ?? null);
-        echo "\">";
-        echo ($context["text_voucher"] ?? null);
-        echo "</a></li>
-          ";
-        // line 31
-        if (($context["affiliate"] ?? null)) {
-            // line 32
-            echo "            <li><a href=\"";
-            echo ($context["affiliate"] ?? null);
-            echo "\">";
-            echo ($context["text_affiliate"] ?? null);
-            echo "</a></li>
-          ";
+      ";
+        // line 26
+        if (($context["informations"] ?? null)) {
+            // line 27
+            echo "        <div class=\"col-sm-3\">
+          <h5>";
+            // line 28
+            echo ($context["text_information"] ?? null);
+            echo "</h5>
+          <ul class=\"list-unstyled\">
+            ";
+            // line 30
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable(($context["informations"] ?? null));
+            foreach ($context['_seq'] as $context["_key"] => $context["information"]) {
+                // line 31
+                echo "              <li><a href=\"";
+                echo twig_get_attribute($this->env, $this->source, $context["information"], "href", [], "any", false, false, false, 31);
+                echo "\">";
+                echo twig_get_attribute($this->env, $this->source, $context["information"], "title", [], "any", false, false, false, 31);
+                echo "</a></li>
+            ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['information'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 33
+            echo "          </ul>
+        </div>
+      ";
         }
-        // line 34
-        echo "          <li><a href=\"";
-        echo ($context["special"] ?? null);
-        echo "\">";
-        echo ($context["text_special"] ?? null);
-        echo "</a></li>
-        </ul>
-      </div>
-      <div class=\"col-sm-3\">
-        <h5>";
-        // line 38
-        echo ($context["text_account"] ?? null);
-        echo "</h5>
+        // line 36
+        echo "      <div class=\"col-sm-3\">
+        <h5>Follow us</h5>
         <ul class=\"list-unstyled\">
-          <li><a href=\"";
-        // line 40
-        echo ($context["account"] ?? null);
-        echo "\">";
-        echo ($context["text_account"] ?? null);
-        echo "</a></li>
-          <li><a href=\"";
-        // line 41
-        echo ($context["order"] ?? null);
-        echo "\">";
-        echo ($context["text_order"] ?? null);
-        echo "</a></li>
-          <li><a href=\"";
-        // line 42
-        echo ($context["wishlist"] ?? null);
-        echo "\">";
-        echo ($context["text_wishlist"] ?? null);
-        echo "</a></li>
-          <li><a href=\"";
-        // line 43
-        echo ($context["newsletter"] ?? null);
-        echo "\">";
-        echo ($context["text_newsletter"] ?? null);
-        echo "</a></li>
+          <li><a href=\"\">facebook</li>
+          <li><a href=\"\">Instagram</li>
         </ul>
       </div>
     </div>
-    <hr>
-    <p>";
-        // line 48
+
+    <!-- <p>";
+        // line 45
         echo ($context["powered"] ?? null);
-        echo "</p>
-    <!--
-OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
-Please donate via PayPal to donate@opencart.com
-//-->
+        echo "</p> -->
+  </div>
+  <div class=\"container-fluid mt-5\">
+  <div class=\"row\">
+       <div class=\"col footbottom\">
+           <p class=\"text-center mt-3\">© coastway.com.us 2023</p>
+       </div>
+     </div>
   </div>
 </footer>
 ";
@@ -227,7 +181,7 @@ Please donate via PayPal to donate@opencart.com
 
     public function getDebugInfo()
     {
-        return array (  214 => 60,  205 => 58,  201 => 57,  197 => 56,  193 => 55,  183 => 48,  173 => 43,  167 => 42,  161 => 41,  155 => 40,  150 => 38,  140 => 34,  132 => 32,  130 => 31,  124 => 30,  118 => 29,  113 => 27,  103 => 23,  95 => 21,  93 => 20,  87 => 19,  81 => 18,  76 => 16,  73 => 15,  68 => 12,  57 => 10,  53 => 9,  48 => 7,  45 => 6,  43 => 5,  37 => 1,);
+        return array (  168 => 60,  159 => 58,  155 => 57,  151 => 56,  147 => 55,  134 => 45,  123 => 36,  118 => 33,  107 => 31,  103 => 30,  98 => 28,  95 => 27,  93 => 26,  84 => 23,  76 => 21,  74 => 20,  68 => 19,  62 => 18,  57 => 16,  45 => 7,  37 => 1,);
     }
 
     public function getSourceContext()
