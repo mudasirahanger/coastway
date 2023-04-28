@@ -178,101 +178,14 @@ class __TwigTemplate_d178ea71c9360d135dc5a15dd0550af9 extends Template
     </div>
     <div class=\"nav float-end\">
       <ul class=\"list-inline\">
-        <!-- <li class=\"list-inline-item\"><a href=\"";
+        <li class=\"list-inline-item\"><a href=\"";
         // line 53
         echo ($context["contact"] ?? null);
-        echo "\"><i class=\"fa-solid fa-phone\"></i></a> <span class=\"d-none d-md-inline\">";
-        echo ($context["telephone"] ?? null);
-        echo "</span></li>
-        <li class=\"list-inline-item\">
-          <div class=\"dropdown\">
-            <a href=\"";
-        // line 56
-        echo ($context["account"] ?? null);
-        echo "\" class=\"dropdown-toggle\" data-bs-toggle=\"dropdown\"><i class=\"fa-solid fa-user\"></i> <span class=\"d-none d-md-inline\">";
-        echo ($context["text_account"] ?? null);
-        echo "</span> <i class=\"fa-solid fa-caret-down\"></i></a>
-            <ul class=\"dropdown-menu dropdown-menu-right\">
-              ";
-        // line 58
-        if ( !($context["logged"] ?? null)) {
-            // line 59
-            echo "                <li><a href=\"";
-            echo ($context["register"] ?? null);
-            echo "\" class=\"dropdown-item\">";
-            echo ($context["text_register"] ?? null);
-            echo "</a></li>
-                <li><a href=\"";
-            // line 60
-            echo ($context["login"] ?? null);
-            echo "\" class=\"dropdown-item\">";
-            echo ($context["text_login"] ?? null);
-            echo "</a></li>
-              ";
-        } else {
-            // line 62
-            echo "                <li><a href=\"";
-            echo ($context["account"] ?? null);
-            echo "\" class=\"dropdown-item\">";
-            echo ($context["text_account"] ?? null);
-            echo "</a></li>
-                <li><a href=\"";
-            // line 63
-            echo ($context["order"] ?? null);
-            echo "\" class=\"dropdown-item\">";
-            echo ($context["text_order"] ?? null);
-            echo "</a></li>
-                <li><a href=\"";
-            // line 64
-            echo ($context["transaction"] ?? null);
-            echo "\" class=\"dropdown-item\">";
-            echo ($context["text_transaction"] ?? null);
-            echo "</a></li>
-                <li><a href=\"";
-            // line 65
-            echo ($context["download"] ?? null);
-            echo "\" class=\"dropdown-item\">";
-            echo ($context["text_download"] ?? null);
-            echo "</a></li>
-                <li><a href=\"";
-            // line 66
-            echo ($context["logout"] ?? null);
-            echo "\" class=\"dropdown-item\">";
-            echo ($context["text_logout"] ?? null);
-            echo "</a></li>
-              ";
-        }
-        // line 68
-        echo "            </ul>
-          </div>
-        </li>
+        echo "\">Find a store</a></li>
         <li class=\"list-inline-item\"><a href=\"";
-        // line 71
-        echo ($context["wishlist"] ?? null);
-        echo "\" id=\"wishlist-total\" title=\"";
-        echo ($context["text_wishlist"] ?? null);
-        echo "\"><i class=\"fa-solid fa-heart\"></i> <span class=\"d-none d-md-inline\">";
-        echo ($context["text_wishlist"] ?? null);
-        echo "</span></a></li>
-        <li class=\"list-inline-item\"><a href=\"";
-        // line 72
-        echo ($context["shopping_cart"] ?? null);
-        echo "\" title=\"";
-        echo ($context["text_shopping_cart"] ?? null);
-        echo "\"><i class=\"fa-solid fa-cart-shopping\"></i> <span class=\"d-none d-md-inline\">";
-        echo ($context["text_shopping_cart"] ?? null);
-        echo "</span></a></li>
-        <li class=\"list-inline-item\"><a href=\"";
-        // line 73
-        echo ($context["checkout"] ?? null);
-        echo "\" title=\"";
-        echo ($context["text_checkout"] ?? null);
-        echo "\"><i class=\"fa-solid fa-share\"></i> <span class=\"d-none d-md-inline\">";
-        echo ($context["text_checkout"] ?? null);
-        echo "</span></a></li>
-        -->
-        <li class=\"list-inline-item\">Find a store</li>
-        <li class=\"list-inline-item\">Customer Service</li>
+        // line 54
+        echo ($context["contact"] ?? null);
+        echo "\">Customer Service</a></li>
       </ul>
     </div>
   </div>
@@ -283,44 +196,46 @@ class __TwigTemplate_d178ea71c9360d135dc5a15dd0550af9 extends Template
       <div class=\"col-md-3 col-lg-3\">
         <div id=\"logo\">
             <h1><a href=\"";
-        // line 86
+        // line 64
         echo ($context["home"] ?? null);
         echo "\" style=\"color:#795C34;font-weight:900\">COASTWAY</a></h1>
         </div>
       </div>
       <div class=\"col-md-6\">
-      <ul class=\"list-inline menu-top\">
-          <li class=\"list-inline-item\"><a href=\"\">Home</a></li>
-          <li class=\"list-inline-item\"><a href=\"\">Men</a></li>
-          <li class=\"list-inline-item\"><a href=\"\">Women</a></li>
-          <li class=\"list-inline-item\"><a href=\"\">Accessories</a></li>
-          <li class=\"list-inline-item\"><a href=\"\" class=\"sale-color\">Sale</a></li>
-        </ul>
+          ";
+        // line 68
+        echo ($context["menu"] ?? null);
+        echo " 
       </div>
       <div class=\"col-md-3 col-lg-3\">
         <ul class=\"list-inline menu-top-right\">
-          <li class=\"list-inline-item\"><i class=\"fa-solid fa-search\"></i></li>
-          <li class=\"list-inline-item\"><i class=\"fa-solid fa-heart\"></i></li>
-          <li class=\"list-inline-item\"><i class=\"fa-solid fa-shopping-bag\"></i></li>
-          <li class=\"list-inline-item\"><i class=\"fa-solid fa-user\"></i></li>
+          <li class=\"list-inline-item\"><a href=\"\"><i class=\"fa-solid fa-search\"></i> </a></li>
+          <li class=\"list-inline-item\"><a href=\"";
+        // line 73
+        echo ($context["wishlist"] ?? null);
+        echo "\"><i class=\"fa-solid fa-heart\"></i></a></li>
+          <li class=\"list-inline-item\"><a href=\"";
+        // line 74
+        echo ($context["shopping_cart"] ?? null);
+        echo "\"><i class=\"fa-solid fa-shopping-bag\"></i></a></li>
+          <li class=\"list-inline-item\"><a href=\"";
+        // line 75
+        echo ($context["login"] ?? null);
+        echo "\"><i class=\"fa-solid fa-user\"></i></a></li>
         </ul>
       </div>
       <!-- <div class=\"col-md-5\">";
-        // line 106
+        // line 78
         echo ($context["search"] ?? null);
         echo "</div> -->
       <!-- <div id=\"header-cart\" class=\"col-md-4 col-lg-3\">";
-        // line 107
+        // line 79
         echo ($context["cart"] ?? null);
         echo "</div> -->
     </div>
   </div>
 </header>
 <main>
-  <!-- ";
-        // line 112
-        echo ($context["menu"] ?? null);
-        echo " -->
 ";
     }
 
@@ -336,7 +251,7 @@ class __TwigTemplate_d178ea71c9360d135dc5a15dd0550af9 extends Template
 
     public function getDebugInfo()
     {
-        return array (  322 => 112,  314 => 107,  310 => 106,  287 => 86,  267 => 73,  259 => 72,  251 => 71,  246 => 68,  239 => 66,  233 => 65,  227 => 64,  221 => 63,  214 => 62,  207 => 60,  200 => 59,  198 => 58,  191 => 56,  183 => 53,  173 => 46,  169 => 45,  160 => 38,  151 => 36,  146 => 35,  135 => 33,  130 => 32,  121 => 30,  116 => 29,  103 => 27,  99 => 26,  88 => 18,  84 => 17,  80 => 16,  75 => 15,  69 => 13,  66 => 12,  60 => 10,  58 => 9,  54 => 8,  50 => 7,  40 => 2,  37 => 1,);
+        return array (  233 => 79,  229 => 78,  223 => 75,  219 => 74,  215 => 73,  207 => 68,  200 => 64,  187 => 54,  183 => 53,  173 => 46,  169 => 45,  160 => 38,  151 => 36,  146 => 35,  135 => 33,  130 => 32,  121 => 30,  116 => 29,  103 => 27,  99 => 26,  88 => 18,  84 => 17,  80 => 16,  75 => 15,  69 => 13,  66 => 12,  60 => 10,  58 => 9,  54 => 8,  50 => 7,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

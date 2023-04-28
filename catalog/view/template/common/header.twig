@@ -50,30 +50,8 @@
     </div>
     <div class="nav float-end">
       <ul class="list-inline">
-        <!-- <li class="list-inline-item"><a href="{{ contact }}"><i class="fa-solid fa-phone"></i></a> <span class="d-none d-md-inline">{{ telephone }}</span></li>
-        <li class="list-inline-item">
-          <div class="dropdown">
-            <a href="{{ account }}" class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-user"></i> <span class="d-none d-md-inline">{{ text_account }}</span> <i class="fa-solid fa-caret-down"></i></a>
-            <ul class="dropdown-menu dropdown-menu-right">
-              {% if not logged %}
-                <li><a href="{{ register }}" class="dropdown-item">{{ text_register }}</a></li>
-                <li><a href="{{ login }}" class="dropdown-item">{{ text_login }}</a></li>
-              {% else %}
-                <li><a href="{{ account }}" class="dropdown-item">{{ text_account }}</a></li>
-                <li><a href="{{ order }}" class="dropdown-item">{{ text_order }}</a></li>
-                <li><a href="{{ transaction }}" class="dropdown-item">{{ text_transaction }}</a></li>
-                <li><a href="{{ download }}" class="dropdown-item">{{ text_download }}</a></li>
-                <li><a href="{{ logout }}" class="dropdown-item">{{ text_logout }}</a></li>
-              {% endif %}
-            </ul>
-          </div>
-        </li>
-        <li class="list-inline-item"><a href="{{ wishlist }}" id="wishlist-total" title="{{ text_wishlist }}"><i class="fa-solid fa-heart"></i> <span class="d-none d-md-inline">{{ text_wishlist }}</span></a></li>
-        <li class="list-inline-item"><a href="{{ shopping_cart }}" title="{{ text_shopping_cart }}"><i class="fa-solid fa-cart-shopping"></i> <span class="d-none d-md-inline">{{ text_shopping_cart }}</span></a></li>
-        <li class="list-inline-item"><a href="{{ checkout }}" title="{{ text_checkout }}"><i class="fa-solid fa-share"></i> <span class="d-none d-md-inline">{{ text_checkout }}</span></a></li>
-        -->
-        <li class="list-inline-item">Find a store</li>
-        <li class="list-inline-item">Customer Service</li>
+        <li class="list-inline-item"><a href="{{ contact }}">Find a store</a></li>
+        <li class="list-inline-item"><a href="{{ contact }}">Customer Service</a></li>
       </ul>
     </div>
   </div>
@@ -87,20 +65,14 @@
         </div>
       </div>
       <div class="col-md-6">
-      <ul class="list-inline menu-top">
-          <li class="list-inline-item"><a href="">Home</a></li>
-          <li class="list-inline-item"><a href="">Men</a></li>
-          <li class="list-inline-item"><a href="">Women</a></li>
-          <li class="list-inline-item"><a href="">Accessories</a></li>
-          <li class="list-inline-item"><a href="" class="sale-color">Sale</a></li>
-        </ul>
+          {{ menu }} 
       </div>
       <div class="col-md-3 col-lg-3">
         <ul class="list-inline menu-top-right">
-          <li class="list-inline-item"><i class="fa-solid fa-search"></i></li>
-          <li class="list-inline-item"><i class="fa-solid fa-heart"></i></li>
-          <li class="list-inline-item"><i class="fa-solid fa-shopping-bag"></i></li>
-          <li class="list-inline-item"><i class="fa-solid fa-user"></i></li>
+          <li class="list-inline-item"><a href=""><i class="fa-solid fa-search"></i> </a></li>
+          <li class="list-inline-item"><a href="{{ wishlist }}"><i class="fa-solid fa-heart"></i></a></li>
+          <li class="list-inline-item"><a href="{{ shopping_cart }}"><i class="fa-solid fa-shopping-bag"></i></a></li>
+          <li class="list-inline-item"><a href="{{ login }}"><i class="fa-solid fa-user"></i></a></li>
         </ul>
       </div>
       <!-- <div class="col-md-5">{{ search }}</div> -->
@@ -109,4 +81,3 @@
   </div>
 </header>
 <main>
-  <!-- {{ menu }} -->

@@ -1,5 +1,12 @@
 {% if categories %}
-  <div class="container">
+<ul class="list-inline menu-top">
+          <li class="list-inline-item"><a href="/">Home</a></li>
+          {% for category in categories %}
+          <li class="list-inline-item"><a href="{{ category.href }}">{{ category.name }}</a></li>     
+          {% endfor %}     
+          <li class="list-inline-item"><a href="" class="sale-color">Sale</a></li>
+        </ul>
+  <!-- <div class="container">
     <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-primary">
       <div id="category" class="d-block d-sm-block d-lg-none">{{ text_category }}</div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#narbar-menu"><i class="fa-solid fa-bars"></i></button>
@@ -28,5 +35,5 @@
         </ul>
       </div>
     </nav>
-  </div>
+  </div> -->
 {% endif %}

@@ -56,25 +56,21 @@ class __TwigTemplate_cebd547d253e7c5aa0db721a2a80cbf4 extends Template
         echo "\">";
         echo ($context["name"] ?? null);
         echo "</a></h4>
-        <p>";
-        // line 7
-        echo ($context["description"] ?? null);
-        echo "</p>
         ";
-        // line 8
+        // line 7
         if (($context["price"] ?? null)) {
-            // line 9
+            // line 8
             echo "          <div class=\"price\">
             ";
-            // line 10
+            // line 9
             if ( !($context["special"] ?? null)) {
-                // line 11
+                // line 10
                 echo "              <span class=\"price-new\">";
                 echo ($context["price"] ?? null);
                 echo "</span>
             ";
             } else {
-                // line 13
+                // line 12
                 echo "              <span class=\"price-new\">";
                 echo ($context["special"] ?? null);
                 echo "</span> <span class=\"price-old\">";
@@ -82,81 +78,71 @@ class __TwigTemplate_cebd547d253e7c5aa0db721a2a80cbf4 extends Template
                 echo "</span>
             ";
             }
-            // line 15
-            echo "            ";
-            if (($context["tax"] ?? null)) {
-                // line 16
-                echo "              <span class=\"price-tax\">";
-                echo ($context["text_tax"] ?? null);
-                echo " ";
-                echo ($context["tax"] ?? null);
-                echo "</span>
-            ";
-            }
-            // line 18
-            echo "          </div>
+            // line 13
+            echo "           
+          </div>
         ";
         }
-        // line 20
+        // line 16
         echo "        ";
         if ((($context["review_status"] ?? null) && ($context["rating"] ?? null))) {
-            // line 21
+            // line 17
             echo "          <div class=\"rating\">
             ";
-            // line 22
+            // line 18
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(range(1, 5));
             foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-                // line 23
+                // line 19
                 echo "              ";
                 if ((($context["rating"] ?? null) < $context["i"])) {
-                    // line 24
+                    // line 20
                     echo "                <span class=\"fa-stack\"><i class=\"fa-regular fa-star fa-stack-1x\"></i></span>
               ";
                 } else {
-                    // line 26
+                    // line 22
                     echo "                <span class=\"fa-stack\"><i class=\"fa-solid fa-star fa-stack-1x\"></i><i class=\"fa-regular fa-star fa-stack-1x\"></i></span>
               ";
                 }
-                // line 28
+                // line 24
                 echo "            ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 29
+            // line 25
             echo "          </div>
         ";
         }
-        // line 31
+        // line 27
         echo "      </div>
-      <div class=\"button-group\">
+      <!-- <div class=\"button-group\">
         <button type=\"submit\" formaction=\"";
-        // line 33
+        // line 29
         echo ($context["add_to_cart"] ?? null);
         echo "\" data-bs-toggle=\"tooltip\" title=\"";
         echo ($context["button_cart"] ?? null);
         echo "\"><i class=\"fa-solid fa-shopping-cart\"></i></button>
         <button type=\"submit\" formaction=\"";
-        // line 34
+        // line 30
         echo ($context["add_to_wishlist"] ?? null);
         echo "\" data-bs-toggle=\"tooltip\" title=\"";
         echo ($context["button_wishlist"] ?? null);
         echo "\"><i class=\"fa-solid fa-heart\"></i></button>
         <button type=\"submit\" formaction=\"";
-        // line 35
+        // line 31
         echo ($context["add_to_compare"] ?? null);
         echo "\" data-bs-toggle=\"tooltip\" title=\"";
         echo ($context["button_compare"] ?? null);
         echo "\"><i class=\"fa-solid fa-arrow-right-arrow-left\"></i></button>
-      </div>
+      </div> -->
     </div>
     <input type=\"hidden\" name=\"product_id\" value=\"";
-        // line 38
+        // line 34
         echo ($context["product_id"] ?? null);
         echo "\"/>
     <input type=\"hidden\" name=\"quantity\" value=\"";
-        // line 39
+        // line 35
         echo ($context["minimum"] ?? null);
         echo "\"/>
   </div>
@@ -176,7 +162,7 @@ class __TwigTemplate_cebd547d253e7c5aa0db721a2a80cbf4 extends Template
 
     public function getDebugInfo()
     {
-        return array (  160 => 39,  156 => 38,  148 => 35,  142 => 34,  136 => 33,  132 => 31,  128 => 29,  122 => 28,  118 => 26,  114 => 24,  111 => 23,  107 => 22,  104 => 21,  101 => 20,  97 => 18,  89 => 16,  86 => 15,  78 => 13,  72 => 11,  70 => 10,  67 => 9,  65 => 8,  61 => 7,  55 => 6,  43 => 3,  37 => 1,);
+        return array (  146 => 35,  142 => 34,  134 => 31,  128 => 30,  122 => 29,  118 => 27,  114 => 25,  108 => 24,  104 => 22,  100 => 20,  97 => 19,  93 => 18,  90 => 17,  87 => 16,  82 => 13,  74 => 12,  68 => 10,  66 => 9,  63 => 8,  61 => 7,  55 => 6,  43 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
