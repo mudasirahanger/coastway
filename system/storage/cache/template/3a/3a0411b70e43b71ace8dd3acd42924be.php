@@ -164,26 +164,18 @@ class __TwigTemplate_d178ea71c9360d135dc5a15dd0550af9 extends Template
   <div class=\"container\">
     <div class=\"nav float-start\">
       <ul class=\"list-inline\">
-        <!-- <li class=\"list-inline-item\">";
-        // line 45
-        echo ($context["currency"] ?? null);
-        echo "</li>
-        <li class=\"list-inline-item\">";
-        // line 46
-        echo ($context["language"] ?? null);
-        echo "</li> -->
         <li class=\"list-inline-item\">30-day free returns</li>
         <li class=\"list-inline-item\">Fast and free delivery over \$100*</li>
       </ul>
     </div>
-    <div class=\"nav float-end\">
+    <div class=\"nav float-end d-none d-sm-block\">
       <ul class=\"list-inline\">
         <li class=\"list-inline-item\"><a href=\"";
-        // line 53
+        // line 51
         echo ($context["contact"] ?? null);
         echo "\">Find a store</a></li>
         <li class=\"list-inline-item\"><a href=\"";
-        // line 54
+        // line 52
         echo ($context["contact"] ?? null);
         echo "\">Customer Service</a></li>
       </ul>
@@ -193,43 +185,44 @@ class __TwigTemplate_d178ea71c9360d135dc5a15dd0550af9 extends Template
 <header class=\"border-header\">
   <div class=\"container\">
     <div class=\"row\">
-      <div class=\"col-md-3 col-lg-3\">
+      <div class=\"col-md-3 col-lg-3 col-sm-12\">
         <div id=\"logo\">
             <h1><a href=\"";
-        // line 64
+        // line 62
         echo ($context["home"] ?? null);
         echo "\" style=\"color:#795C34;font-weight:900\">COASTWAY</a></h1>
         </div>
       </div>
       <div class=\"col-md-6\">
           ";
-        // line 68
+        // line 66
         echo ($context["menu"] ?? null);
         echo " 
       </div>
-      <div class=\"col-md-3 col-lg-3\">
-        <ul class=\"list-inline menu-top-right\">
+      <div class=\"col-md-3 col-lg-3 col-sm-12\">
+        <ul class=\"list-inline menu-top-right\"> 
+          <li class=\"list-inline-item d-block d-sm-none float-start\"><a data-bs-toggle=\"offcanvas\" href=\"#offcanvasExample\" role=\"button\" aria-controls=\"offcanvasExample\"><i class=\"fas fa-bars\"></i> </a> </li>
           <li class=\"list-inline-item\"><a href=\"\"><i class=\"fa-solid fa-search\"></i> </a></li>
           <li class=\"list-inline-item\"><a href=\"";
-        // line 73
+        // line 72
         echo ($context["wishlist"] ?? null);
         echo "\"><i class=\"fa-solid fa-heart\"></i></a></li>
           <li class=\"list-inline-item\"><a href=\"";
-        // line 74
+        // line 73
         echo ($context["shopping_cart"] ?? null);
         echo "\"><i class=\"fa-solid fa-shopping-bag\"></i></a></li>
           <li class=\"list-inline-item\"><a href=\"";
-        // line 75
+        // line 74
         echo ($context["login"] ?? null);
         echo "\"><i class=\"fa-solid fa-user\"></i></a></li>
         </ul>
       </div>
       <!-- <div class=\"col-md-5\">";
-        // line 78
+        // line 77
         echo ($context["search"] ?? null);
         echo "</div> -->
       <!-- <div id=\"header-cart\" class=\"col-md-4 col-lg-3\">";
-        // line 79
+        // line 78
         echo ($context["cart"] ?? null);
         echo "</div> -->
     </div>
@@ -251,7 +244,7 @@ class __TwigTemplate_d178ea71c9360d135dc5a15dd0550af9 extends Template
 
     public function getDebugInfo()
     {
-        return array (  233 => 79,  229 => 78,  223 => 75,  219 => 74,  215 => 73,  207 => 68,  200 => 64,  187 => 54,  183 => 53,  173 => 46,  169 => 45,  160 => 38,  151 => 36,  146 => 35,  135 => 33,  130 => 32,  121 => 30,  116 => 29,  103 => 27,  99 => 26,  88 => 18,  84 => 17,  80 => 16,  75 => 15,  69 => 13,  66 => 12,  60 => 10,  58 => 9,  54 => 8,  50 => 7,  40 => 2,  37 => 1,);
+        return array (  226 => 78,  222 => 77,  216 => 74,  212 => 73,  208 => 72,  199 => 66,  192 => 62,  179 => 52,  175 => 51,  160 => 38,  151 => 36,  146 => 35,  135 => 33,  130 => 32,  121 => 30,  116 => 29,  103 => 27,  99 => 26,  88 => 18,  84 => 17,  80 => 16,  75 => 15,  69 => 13,  66 => 12,  60 => 10,  58 => 9,  54 => 8,  50 => 7,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

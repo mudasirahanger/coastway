@@ -64,6 +64,9 @@ footer p {
 .footbottom{
     background-color: #000;
 }
+.footbottom p {
+    color:#FFF;
+}
 .breadcrumb {
     margin: 10px 0 20px 0;
     padding: 8px 0;
