@@ -14,20 +14,20 @@ download/
 upload/
 
 # ignore config files
-config.php
-admin/config.php
+/config.php
+/admin/config.php
 
 # ignore session files
-system/storage/session/*
+/system/storage/session/*
 
 # ignore log files
-system/storage/logs/*
+/system/storage/logs/*
 
 # ignore backup files
-system/storage/backup/*
+/system/storage/backup/*
 
 # ignore modification cache files
-system/storage/modification/*
+/system/storage/modification/*
 
 # ignore composer dependencies
 system/vendor/
