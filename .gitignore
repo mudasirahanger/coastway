@@ -1,17 +1,17 @@
 # OpenCart 4.0.1.1 git ignore file
 
 # ignore the following directories and files
-/system/storage/
-/system/backup/
-/system/cache/
-/system/logs/
-/system/modification/
-/system/vendor/
-/vendor/
-/image/cache/
-/image/catalog/
-/download/
-/upload/
+system/storage/
+system/backup/
+system/cache/
+system/logs/
+system/modification/
+system/vendor/
+vendor/
+image/cache/
+image/catalog/
+download/
+upload/
 
 # ignore config files
 config.php
