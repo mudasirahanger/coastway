@@ -34,14 +34,31 @@ class __TwigTemplate_f2049f3122b1f49d7a6a140460b3e106 extends Template
     {
         $macros = $this->macros;
         // line 1
-        echo "</main>
+        echo "
+<div class=\"container\">
+    <div class=\"row\">
+          <h3 class=\"fheading\">Payment Options</h5>
+    </div>
+    <div class=\"row text-center\">
+         <div class=\"col-md-4 col-sm-4\">
+          <a href=\"\"><img src=\"catalog\\view\\image\\card.png\" class=\"img-fluid\"></a>
+         </div>
+         <div class=\"col-md-4 col-sm-4\">
+         <a href=\"\"><img src=\"catalog\\view\\image\\master-card.png\" class=\"img-fluid\"></a>
+         </div>
+         <div class=\"col-md-4 col-sm-4\">
+         <a href=\"\"><img src=\"catalog\\view\\image\\paypal.png\" class=\"img-fluid\"></a>
+         </div>
+    </div>
+</div>
+</main>
 <footer>
   <div class=\"container\">
     <div class=\"row\">
       
         <div class=\"col-sm-3\">
         <h5><a href=\"";
-        // line 7
+        // line 24
         echo ($context["home"] ?? null);
         echo "\" style=\"color:#fff;font-weight:900\">COASTWAY</a></h5>
         <p class=\"text-left\">
@@ -53,26 +70,26 @@ class __TwigTemplate_f2049f3122b1f49d7a6a140460b3e106 extends Template
     
       <div class=\"col-sm-3\">
         <h5>";
-        // line 16
+        // line 33
         echo ($context["text_service"] ?? null);
         echo "</h5>
         <ul class=\"list-unstyled\">
           <li><a href=\"";
-        // line 18
+        // line 35
         echo ($context["contact"] ?? null);
         echo "\">";
         echo ($context["text_contact"] ?? null);
         echo "</a></li>
           <li><a href=\"";
-        // line 19
+        // line 36
         echo ($context["return"] ?? null);
         echo "\">";
         echo ($context["text_return"] ?? null);
         echo "</a></li>
           ";
-        // line 20
+        // line 37
         if (($context["gdpr"] ?? null)) {
-            // line 21
+            // line 38
             echo "            <li><a href=\"";
             echo ($context["gdpr"] ?? null);
             echo "\">";
@@ -80,7 +97,7 @@ class __TwigTemplate_f2049f3122b1f49d7a6a140460b3e106 extends Template
             echo "</a></li>
           ";
         }
-        // line 23
+        // line 40
         echo "          <li><a href=\"";
         echo ($context["sitemap"] ?? null);
         echo "\">";
@@ -89,37 +106,37 @@ class __TwigTemplate_f2049f3122b1f49d7a6a140460b3e106 extends Template
         </ul>
       </div>
       ";
-        // line 26
+        // line 43
         if (($context["informations"] ?? null)) {
-            // line 27
+            // line 44
             echo "        <div class=\"col-sm-3\">
           <h5>";
-            // line 28
+            // line 45
             echo ($context["text_information"] ?? null);
             echo "</h5>
           <ul class=\"list-unstyled\">
             ";
-            // line 30
+            // line 47
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["informations"] ?? null));
             foreach ($context['_seq'] as $context["_key"] => $context["information"]) {
-                // line 31
+                // line 48
                 echo "              <li><a href=\"";
-                echo twig_get_attribute($this->env, $this->source, $context["information"], "href", [], "any", false, false, false, 31);
+                echo twig_get_attribute($this->env, $this->source, $context["information"], "href", [], "any", false, false, false, 48);
                 echo "\">";
-                echo twig_get_attribute($this->env, $this->source, $context["information"], "title", [], "any", false, false, false, 31);
+                echo twig_get_attribute($this->env, $this->source, $context["information"], "title", [], "any", false, false, false, 48);
                 echo "</a></li>
             ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['information'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 33
+            // line 50
             echo "          </ul>
         </div>
       ";
         }
-        // line 36
+        // line 53
         echo "      <div class=\"col-sm-3\">
         <h5>Follow us</h5>
         <ul class=\"list-unstyled\">
@@ -130,7 +147,7 @@ class __TwigTemplate_f2049f3122b1f49d7a6a140460b3e106 extends Template
     </div>
 
     <!-- <p>";
-        // line 45
+        // line 62
         echo ($context["powered"] ?? null);
         echo "</p> -->
   </div>
@@ -143,28 +160,28 @@ class __TwigTemplate_f2049f3122b1f49d7a6a140460b3e106 extends Template
   </div>
 </footer>
 ";
-        // line 55
+        // line 72
         echo ($context["cookie"] ?? null);
         echo "
 <script src=\"";
-        // line 56
+        // line 73
         echo ($context["bootstrap"] ?? null);
         echo "\" type=\"text/javascript\"></script>
 ";
-        // line 57
+        // line 74
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["scripts"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["script"]) {
-            // line 58
+            // line 75
             echo "  <script src=\"";
-            echo twig_get_attribute($this->env, $this->source, $context["script"], "href", [], "any", false, false, false, 58);
+            echo twig_get_attribute($this->env, $this->source, $context["script"], "href", [], "any", false, false, false, 75);
             echo "\" type=\"text/javascript\"></script>
 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['script'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 60
+        // line 77
         echo "</body></html>
 ";
     }
@@ -181,7 +198,7 @@ class __TwigTemplate_f2049f3122b1f49d7a6a140460b3e106 extends Template
 
     public function getDebugInfo()
     {
-        return array (  168 => 60,  159 => 58,  155 => 57,  151 => 56,  147 => 55,  134 => 45,  123 => 36,  118 => 33,  107 => 31,  103 => 30,  98 => 28,  95 => 27,  93 => 26,  84 => 23,  76 => 21,  74 => 20,  68 => 19,  62 => 18,  57 => 16,  45 => 7,  37 => 1,);
+        return array (  185 => 77,  176 => 75,  172 => 74,  168 => 73,  164 => 72,  151 => 62,  140 => 53,  135 => 50,  124 => 48,  120 => 47,  115 => 45,  112 => 44,  110 => 43,  101 => 40,  93 => 38,  91 => 37,  85 => 36,  79 => 35,  74 => 33,  62 => 24,  37 => 1,);
     }
 
     public function getSourceContext()

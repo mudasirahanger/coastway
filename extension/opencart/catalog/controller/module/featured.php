@@ -13,8 +13,10 @@ class Featured extends \Opencart\System\Engine\Controller {
 		if (!empty($setting['product'])) {
 			$products = [];
 			$product_data = [];
-
+			$data['heading_title'] = $setting['name'];
+			
 			foreach ($setting['product'] as $product_id) {
+				
 				$product_info = $this->model_catalog_product->getProduct($product_id);
 
 				if ($product_info) {

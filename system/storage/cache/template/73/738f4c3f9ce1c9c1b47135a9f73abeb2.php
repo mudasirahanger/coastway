@@ -34,7 +34,7 @@ class __TwigTemplate_e1e7e8a708badca0b29deacaf2e52da2 extends Template
     {
         $macros = $this->macros;
         // line 1
-        echo "<h3>";
+        echo "<h3 class=\"fheading\">";
         echo ($context["heading_title"] ?? null);
         echo "</h3>
 <div class=\"row";
